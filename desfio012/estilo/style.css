@@ -45,20 +45,36 @@ html, body {
              padding-left: 30px;
              font-family: var(--fonte3);
        }
+       section > p { padding:2em;}
        section.normal{
          background-color: white;
          color:black;
        }
-        section.imagem { background-color: rgb(41, 40, 40); 
-            color: white;}
+ section.imagem { background-color: rgb(41, 40, 40); 
+ color: white;
+ background-attachment: fixed;
+  }
 
-            section.imagem > p { display: inline-block;
-                padding: 3.5px;
-                 background-color: #0000003b;}
+section.imagem > p { display: inline-block;
+padding: 3.5px;
+ background-color: #0000003b;
+ text-shadow: 1px 1px 0px black;
+box-shadow: inset 6px 6px 13px 0px #00000046;}
 
-       footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 10px;
-       }
+ section#img01 { background-image: url('../imagens/background001.jpg'); 
+  background-position: right center;
+  background-size: cover;}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+                  
+
+footer {
+  background-color: black;
+ color: white;
+ text-align: center;
+padding: 10px;
+}
