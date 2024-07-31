@@ -6,14 +6,21 @@
     <title>tabelas</title>
     <style>
  body { font-family: Arial, Helvetica, sans-serif; }
-    table { width: 400px; 
-       border-collapse: collapse;}
-        td { border: 1px solid black;
+
+ table { width: 400px; 
+ border-collapse: collapse;}
+
+ td { border: 1px solid black;
  padding: 8px;}
- td.dado {background-color: yellow;}
+
+ td.dado {background-color: rgb(238, 255, 0);}
           
  tr.linha { background-color: darkgray;}
- 
+    :hover .dado { background-color: aqua;
+      }
+   
+
+       
     </style>
 </head>
 <body>
@@ -25,14 +32,14 @@
   -->
     <table>
         <tr class="linha"><!--primeira linha-->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td class="tab3">A1</td>
+            <td >B1</td>
+            <td >C1</td>
         </tr>
         <tr >
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td >A2</td>
+            <td >B2</td>
+            <td >C2</td>
         </tr>
         <tr>
             <td>A3</td>
@@ -50,32 +57,7 @@
             <td class="dado">C5</td>
         </tr>
     </table>
-    <table class>
-    <h1>alinhamento de tabela</h1>
-    <td>D1</td>
-            <td>E1</td>
-            <td>F1</td>
-        </tr>
-        <tr >
-            <td>D2</td>
-            <td>E2</td>
-            <td>F2</td>
-        </tr>
-        <tr>
-            <td>D3</td>
-            <td>E3</td>
-            <td>F3</td>
-        </tr> 
-        <tr>
-            <td>D4</td>
-            <td >E4</td>
-            <td>F4</td>
-        </tr>
-        <tr>
-            <td>D5</td>
-            <td>E5</TD>
-            <td>F5</td>
-        </tr>
-    </table>
+
+    
 </body>
 </html>
