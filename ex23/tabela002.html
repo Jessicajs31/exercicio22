@@ -9,13 +9,29 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table { width: 500px; 
-        border-collapse: collapse;} 
+        border-collapse: collapse;
+       position: relative;} 
 
         td, th { border: 1px solid black;
         padding: 10px;
       }
+       caption {
+         font-size: 1.5em;
+         font-weight: bold;
+         padding: 10px;
+         background-color: cadetblue;
+      
+       }
+        tbody> tr:nth-child(2n){
+          background-color: lightblue;
+        }
+        thead > tr >th { position:sticky;
+        top: 1px;
+      background-color: #1eaa74;;}
 
-        thead,tfoot { background-color: rgb(30, 170, 116);
+
+
+        thead,tfoot { background-color: #1eaa74;
           color: white;}
           
           td.num { text-align: right;}
@@ -24,10 +40,11 @@
  <body>
     <h1>Uso de tabela grandes</h1>
  <table>
+   <caption>população das Unidades Federativas</caption>
     <thead>
     <tr>
-        <th>Estado</th>
-        <th>população</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 50px;">população</th>
         </tr>
      </thead>
     
@@ -85,10 +102,15 @@
      </tbody>
      <tfoot>
      <tr>
-        <th>Total de habitantes</th>
+        <th scope="row">Total de habitantes</th>
         <td class="num"> <strong>210.147.125 </strong></td>
      </tr>
     </tfoot>
 </table>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus provident sapiente velit ea assumenda aspernatur quidem et ab! Animi sed iusto at quae incidunt repellat labore saepe provident itaque consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat corrupti velit consectetur veniam soluta itaque dolores eaque ex reiciendis, dolore aliquam et enim nesciunt amet aspernatur inventore necessitatibus obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam atque consequatur alias soluta obcaecati, eligendi repellendus, blanditiis vitae facere maiores minus eos ipsum id iste. Explicabo iusto et expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus iste et a, harum, minus repudiandae exercitationem, quaerat facilis quod tempore magni sint voluptate debitis sapiente est fugit veritatis possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia doloribus reiciendis! Neque vitae illum adipisci commodi autem, laboriosam illo doloremque perspiciatis architecto praesentium tenetur sint recusandae est itaque eveniet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo facere libero quae magni temporibus hic? Aliquam, ipsum modi necessitatibus possimus alias beatae fugit cupiditate deserunt ea. Dolorum aperiam veniam iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio veniam quos alias temporibus, incidunt sequi esse quas in sunt at ut quae inventore aspernatur eius autem doloribus. Molestias, odit quisquam!] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam tempora fugit reprehenderit earum sequi minus rerum laborum optio dolorum eligendi dicta modi eveniet expedita provident perferendis mollitia accusamus, porro fuga.</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis suscipit quam nemo, enim odit distinctio deleniti vel? Suscipit, quas! Repellendus doloremque deserunt veniam, temporibus animi quisquam fuga. Quibusdam, provident id.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum deleniti sapiente eos tenetur facilis. Amet incidunt maxime, soluta exercitationem impedit pariatur saepe. Ipsa iusto saepe earum deleniti magnam similique?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quis necessitatibus delectus numquam. Tempore iure ratione architecto, corrupti cumque, perspiciatis consequatur unde natus aut inventore quae voluptas, error modi!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perferendis impedit enim accusantium, repellat expedita repellendus aspernatur in vero, mollitia, odio nemo ipsa quas nisi. Id aliquid adipisci quaerat maxime!
+   </p>
 </body>
 </html>
