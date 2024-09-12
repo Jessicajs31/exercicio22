@@ -6,8 +6,28 @@
     <title>formulario</title>
 </head>
 <body>
+    <style>
+        fieldset { width: 400px;
+        ;}
+        
+    </style>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Cadastrais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="20" minlength="5" placeholder="Nome completo" >
+            </p>
+
+        <p>
+           <label for="idata">Data de Nasc...</label>
+           <input type="date" name="data" id="idata" required>
+        </p>
+        
+
+        </fieldset>
           
         <fieldset>
             <legend>Sexo</legend>
@@ -16,6 +36,8 @@
              
             <input type="radio" name="sexo"
             id="isfem" value="F" checked><label for="isfem" >Femenino</label> <br>
+
+            <input type="radio" name="sexo" id="isgay"><label for="isgay">Eu sou Gay</label> <br>
 
             <input type="radio" name="sexo" id="isprf" value="T"><label for="isprf">Prefiro não dizer</label> <br>
 
@@ -32,6 +54,7 @@
             <input type="checkbox" name="esbast" id="iesbast" ><label for="iesbast"> Basquete</label> <br>
              
             <input type="checkbox" name="esnat" id="iesnat" ><label for="iesnat"> Natação</label> <br>
+         
 
 
 
