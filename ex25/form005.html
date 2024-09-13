@@ -9,18 +9,23 @@
 <body background="imagem/imamjogo.png" >
     <style>
         
-        fieldset { width: 500px;
+        fieldset { width: 456px;
         ; }
-        main { width: 650px;
-          padding: 20px;
-         margin: auto;
-        background-color: #7fffd427;
+        main {
+            min-width: 200px;
+            max-width: 1000px;
+          padding: 2px;
+         margin:auto;
+         background-color: #7fffd427;
          border-radius: 10px;
-        box-shadow: 5px  6px 15px  #00000057;}
-        h1 { background-color: #0000ff73;
+         box-shadow: 5px  6px 15px  #00000057;}
+
+         h1 { background-color: #0000ff73;
          text-shadow: 1px 1px 2px #0000003d; }
       
       body{ height:98vh ;
+        margin: 0%;
+        padding: 0%;
         background-repeat: no-repeat; 
        background-position: 20px
        ;
@@ -29,13 +34,10 @@
       background-attachment:fixed ;
      background-size: 250px;
      background-size: 300px;
-    
      }
     
-      
-         
-    </style>
-    <main >
+      </style>
+     <main >
           
            
         <h1>Pesquisa Social</h1>
@@ -44,7 +46,7 @@
                 <legend>Dados Cadastrais</legend>
                 <p>
                     <label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome" required maxlength="20" minlength="5" placeholder="Nome completo" >
+                    <input type="text" name="nome" id="inome" required maxlength="40" minlength="10" placeholder="Nome completo" >
                 </p>
             <p>
                <label for="idata">Data de Nasc...</label>
@@ -77,6 +79,10 @@
                 <input type="checkbox" name="esbast" id="iesbast" ><label for="iesbast"> Basquete</label> <br>
         
                 <input type="checkbox" name="esnat" id="iesnat" ><label for="iesnat"> Natação</label> <br>
+                
+                <input type="checkbox" name="escorr" id="iescorr"><label for="iescorr">Corrida</label><br>
+
+                <input type="checkbox" name="escli" id="iescli"><label for="iesbast"> Ciclismo</label>
         
             </fieldset>
         
