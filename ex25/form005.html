@@ -3,68 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>formulario</title>
 </head>
-<body>
+<body background="imagem/imamjogo.png" >
     <style>
-        fieldset { width: 400px;
-        ;}
         
-    </style>
-    <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-
-        <fieldset>
-            <legend>Dados Cadastrais</legend>
-            <p>
-                <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" required maxlength="20" minlength="5" placeholder="Nome completo" >
-            </p>
-
-        <p>
-           <label for="idata">Data de Nasc...</label>
-           <input type="date" name="data" id="idata" required>
-        </p>
-        
-
-        </fieldset>
-          
-        <fieldset>
-            <legend>Sexo</legend>
-
-            <input type="radio" name="sexo" id="ismas" value="M"><label for="ismas">Masculino</label><br>
-             
-            <input type="radio" name="sexo"
-            id="isfem" value="F" checked><label for="isfem" >Femenino</label> <br>
-
-            <input type="radio" name="sexo" id="isgay"><label for="isgay">Eu sou Gay</label> <br>
-
-            <input type="radio" name="sexo" id="isprf" value="T"><label for="isprf">Prefiro não dizer</label> <br>
-
-            <!--No sexo quando se usa o radio no name se coloca apenas sexo abos iguais o id fica diferente-->
-            <!-- CHECKED é para deixar ja marcado-->
-        </fieldset>
+        fieldset { width: 500px;
+        ; }
+        main { width: 650px;
+          padding: 20px;
+         margin: auto;
+        background-color: #7fffd427;
+         border-radius: 10px;
+        box-shadow: 5px  6px 15px  #00000057;}
+        h1 { background-color: #0000ff3b;
+         text-shadow: 1px 1px 2px #0000003d; }
       
-        <fieldset>
-            <legend>Esporte Favoritos</legend>
-            <input type="checkbox" name="esfut" id="iesfut" > <label for="iesfut">Futebol</label> <br>
-
-            <input type="checkbox" name="esvolei" id="iesvolei" > <label for="iesvolei">Volei</label> <br>
-
-            <input type="checkbox" name="esbast" id="iesbast" ><label for="iesbast"> Basquete</label> <br>
-             
-            <input type="checkbox" name="esnat" id="iesnat" ><label for="iesnat"> Natação</label> <br>
+      body{ height:98vh ;
+        background-repeat: no-repeat; 
+       background-position: 20px
+       ;
+       background-size: 400px 400px;
+     background-position: center bottom;
+      background-attachment:fixed ;
+     background-size: 250px;
+     background-size: 300px;
+     
+     
+     
+     }
+      
          
-
-
-
-
-        </fieldset>
+    </style>
+    <main >
+          
+           
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on" >
+            <fieldset>
+                <legend>Dados Cadastrais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required maxlength="20" minlength="5" placeholder="Nome completo" >
+                </p>
+            <p>
+               <label for="idata">Data de Nasc...</label>
+               <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="ifoto">Foto do Perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+                <!--sempre que for colocar foto o Method precisa esta em Post-->
+             </p>
         
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
-    </form>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="ismas" value="M" required><label for="ismas">Masculino</label><br>
+        
+                <input type="radio" name="sexo"
+                id="isfem" value="F" required><label for="isfem" >Femenino</label> <br>
+                <input type="radio" name="sexo" id="isgay" required><label for="isgay">Eu sou Gay</label> <br>
+                <input type="radio" name="sexo" id="isprf" required value="T" checked><label for="isprf">Prefiro não dizer</label> <br>
+                <!--No sexo quando se usa o radio no name se coloca apenas sexo abos iguais o id fica diferente-->
+                <!-- CHECKED é para deixar ja marcado-->
+            </fieldset>
+        
+            <fieldset>
+                <legend>Esporte Favoritos</legend>
+                <input type="checkbox" name="esfut" id="iesfut" > <label for="iesfut">Futebol</label> <br>
+                <input type="checkbox" name="esvolei" id="iesvolei" > <label for="iesvolei">Volei</label> <br>
+                <input type="checkbox" name="esbast" id="iesbast" ><label for="iesbast"> Basquete</label> <br>
+        
+                <input type="checkbox" name="esnat" id="iesnat" ><label for="iesnat"> Natação</label> <br>
+        
+            </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </form>
+    </main>
 </body>
 </html>
