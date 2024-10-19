@@ -18,10 +18,10 @@
 
     /* aparelho em pé retrato (portrat) */
         @media screen and (orientation:portrait) { body {       background-image: url(../imagem/cev-portrait.jpg);
-    background-position: center bottom;}
+     background-position: center bottom;}
         }
 
     /* aparelho deitado  (landscape)*/
  @media screen and (orientation: portrait){
-body { background-image: url(../imagem/cev-landscape.jpg);
+body { background-image: url(../imagem/cev-landscape. jpg);
     background-position: left bottom;} }
