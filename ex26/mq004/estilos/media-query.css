@@ -1,0 +1,63 @@
+@charset "uft-8";
+/* todas as demais medias */
+
+/* Typical Device Breakpoints
+ ----------------------------
+ Pequenas telas :até 320px
+ celular: de 320px até 480px
+ Tablet: 601px até 768px
+ Desktop: 1025px até 1279px
+ Grandes telas: acima de 1280 px */
+
+ @media print {/*impressoura*/
+    *{ font-family: 'Courier New', Courier, monospace;}
+    body { background-image: url(../imagem/back-print.jpg); /*desnecessario*/}
+
+    main { width: 90vw; 
+        border:2px solid #000000c0; }
+    main h1 { text-shadow: none; color: black;}
+    main::after { content: 'Essa impressão foi feita por Jessica Soares estudante do www.cursoemvideo.com';
+     text-decoration: overline;}
+    
+     img#phone { display: none;}
+  img#tablet { display: none;}
+  img#pc { display: none;}
+  img#tv { display: none;}
+  img#print { display: block;}
+
+  }
+
+ @media screen  and (min-width:601px) and (max-width: 768px) { /*tablet*/
+    body{ background-image: url(../imagem/back-tablet.jpg);}
+
+    img#phone { display: none;}
+  img#tablet { display: block;}
+  img#pc { display: none;}
+  img#tv { display: none;}
+  img#print { display: none;}
+    
+ }
+
+
+ @media screen  and (min-width: 768px) and (max-width:1279px){ /*desktop*/ 
+    body { background-image: url(../imagem/back-pc.jpg);}
+
+    img#phone { display: none;}
+  img#tablet { display: none;}
+  img#pc { display: block;}
+  img#tv { display: none;}
+  img#print { display: none;}
+    
+ }
+
+
+@media  screen and (min-width:1280px) { /*grandes telas*/
+    body { background-image: url(../imagem/back-tv.jpg);}
+
+    img#phone { display:none;}
+  img#tablet { display: none;}
+  img#pc { display: none;}
+  img#tv { display: block;}
+  img#print { display: none;}
+    
+}
